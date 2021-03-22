@@ -65,3 +65,10 @@ class VscaleDriver(NodeDriver):
             if kp.name == key_name:
                 return kp
         return None
+
+    def list_nodes(self):
+        response = self.connection.request("v1/scalets")
+        nodes = []
+        for n in response.object:
+            nodes.append(n)
+        return nodes

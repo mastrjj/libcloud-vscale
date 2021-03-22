@@ -38,3 +38,12 @@ def test3_get_key_pair():
     conn = VscaleDriver(key=os.getenv("VSCALE_TOKEN"))
     key = conn.get_key_pair("x200s")
     assert key is None
+
+
+@vcr.use_cassette("./tests/fixtures/list_nodes.yaml", filter_headers=["X-Token"])
+def test_list_nodes():
+    conn = VscaleDriver(key=os.getenv("VSCALE_TOKEN"))
+    nodes = conn.list_nodes()
+    node = nodes.pop(0)
+    assert node["ctid"] == 3547397
+    assert node["name"] == "New-Test"
