@@ -47,3 +47,13 @@ def test_list_nodes():
     node = nodes.pop(0)
     assert node["ctid"] == 3547397
     assert node["name"] == "New-Test"
+
+
+@vcr.use_cassette("./tests/fixtures/list_sizes.yaml", filter_headers=["X-Token"])
+def test_list_sizes():
+    conn = VscaleDriver(key=os.getenv("VSCALE_TOKEN"))
+    sizes = conn.list_sizes()
+    size = sizes.pop(0)
+    assert size["id"] == "small"
+    assert size["cpus"] == 1
+    assert size["memory"] == 512

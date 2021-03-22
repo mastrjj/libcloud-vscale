@@ -1,0 +1,57 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip,deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api.vscale.io
+      User-Agent:
+      - 'libcloud/3.3.1 (Vscale) '
+    method: GET
+    uri: https://api.vscale.io/v1/rplans
+  response:
+    body:
+      string: '[{"id":"small","cpus":1,"memory":512,"addresses":1,"disk":20480,"network":1024,"locations":["spb0","msk0"],"templates":["ubuntu_18.04_64_001_master","centos_7_64_001_master","ubuntu_16.04_64_001_ajenti","debian_8_64_001_master","ubuntu_16.04_64_001_master","ubuntu_20.04_64_001_docker","Fedora_27_64_001_master","debian_10_64_001_fastpanel","ubuntu_20.04_64_001_mongodb","ubuntu_14.04_64_001_preseed","ubuntu_20.04_64_001_lamp","ubuntu_20.04_64_001_nodejs","ubuntu_20.04_64_001_gogs","ubuntu_20.04_64_001_django","ubuntu_20.04_64_001_redis","debian_9_64_001_master","Fedora_28_64_001_master","Fedora_29_64_001_master","CentOS_8_64_001_master","debian_10_64_001_master","Fedora_30_64_001_master","Fedora_31_64_001_master","ubuntu_20.04_64_001_master","Fedora_32_64_001_master"]},{"id":"medium","cpus":1,"memory":1024,"addresses":1,"disk":30720,"network":2048,"locations":["spb0","msk0"],"templates":["ubuntu_18.04_64_001_master","centos_7_64_001_master","ubuntu_16.04_64_001_ajenti","debian_8_64_001_master","ubuntu_16.04_64_001_master","ubuntu_20.04_64_001_docker","Fedora_27_64_001_master","debian_10_64_001_fastpanel","ubuntu_20.04_64_001_bitrix","ubuntu_20.04_64_001_mongodb","ubuntu_14.04_64_001_preseed","ubuntu_20.04_64_001_lamp","ubuntu_20.04_64_001_nodejs","ubuntu_20.04_64_001_gogs","ubuntu_20.04_64_001_wordpress","ubuntu_20.04_64_001_django","ubuntu_16.04_64_001_redmine","ubuntu_20.04_64_001_redis","ubuntu_20.04_64_001_jenkins","debian_9_64_001_master","Fedora_28_64_001_master","Fedora_29_64_001_master","CentOS_8_64_001_master","debian_10_64_001_master","Fedora_30_64_001_master","Fedora_31_64_001_master","ubuntu_20.04_64_001_master","Fedora_32_64_001_master"]},{"id":"large","cpus":2,"memory":2048,"addresses":1,"disk":40960,"network":3072,"locations":["spb0","msk0"],"templates":["ubuntu_18.04_64_001_master","centos_7_64_001_master","ubuntu_16.04_64_001_ajenti","debian_8_64_001_master","ubuntu_16.04_64_001_master","ubuntu_20.04_64_001_docker","Fedora_27_64_001_master","debian_10_64_001_fastpanel","ubuntu_20.04_64_001_bitrix","ubuntu_20.04_64_001_mongodb","ubuntu_14.04_64_001_preseed","ubuntu_20.04_64_001_lamp","ubuntu_20.04_64_001_nodejs","ubuntu_20.04_64_001_gogs","ubuntu_20.04_64_001_wordpress","ubuntu_20.04_64_001_django","ubuntu_16.04_64_001_redmine","ubuntu_20.04_64_001_redis","ubuntu_20.04_64_001_jenkins","debian_9_64_001_master","Fedora_28_64_001_master","Fedora_29_64_001_master","CentOS_8_64_001_master","debian_10_64_001_master","Fedora_30_64_001_master","Fedora_31_64_001_master","ubuntu_20.04_64_001_master","Fedora_32_64_001_master"]},{"id":"huge","cpus":2,"memory":4096,"addresses":1,"disk":61440,"network":4096,"locations":["spb0","msk0"],"templates":["ubuntu_18.04_64_001_master","centos_7_64_001_master","ubuntu_16.04_64_001_ajenti","debian_8_64_001_master","ubuntu_16.04_64_001_master","ubuntu_20.04_64_001_docker","Fedora_27_64_001_master","debian_10_64_001_fastpanel","ubuntu_20.04_64_001_bitrix","ubuntu_20.04_64_001_mongodb","ubuntu_14.04_64_001_preseed","ubuntu_20.04_64_001_lamp","ubuntu_20.04_64_001_nodejs","ubuntu_20.04_64_001_gitlab","ubuntu_20.04_64_001_gogs","ubuntu_20.04_64_001_wordpress","ubuntu_20.04_64_001_django","ubuntu_16.04_64_001_redmine","ubuntu_20.04_64_001_redis","ubuntu_20.04_64_001_jenkins","debian_9_64_001_master","Fedora_28_64_001_master","Fedora_29_64_001_master","CentOS_8_64_001_master","debian_10_64_001_master","Fedora_30_64_001_master","Fedora_31_64_001_master","ubuntu_20.04_64_001_master","Fedora_32_64_001_master"]},{"id":"monster","cpus":4,"memory":8192,"addresses":1,"disk":81920,"network":5120,"locations":["spb0","msk0"],"templates":["ubuntu_18.04_64_001_master","centos_7_64_001_master","ubuntu_16.04_64_001_ajenti","debian_8_64_001_master","ubuntu_16.04_64_001_master","ubuntu_20.04_64_001_docker","Fedora_27_64_001_master","debian_10_64_001_fastpanel","ubuntu_20.04_64_001_bitrix","ubuntu_20.04_64_001_mongodb","ubuntu_14.04_64_001_preseed","ubuntu_20.04_64_001_lamp","ubuntu_20.04_64_001_nodejs","ubuntu_20.04_64_001_gitlab","ubuntu_20.04_64_001_gogs","ubuntu_20.04_64_001_wordpress","ubuntu_20.04_64_001_django","ubuntu_16.04_64_001_redmine","ubuntu_20.04_64_001_redis","ubuntu_20.04_64_001_jenkins","debian_9_64_001_master","Fedora_28_64_001_master","Fedora_29_64_001_master","CentOS_8_64_001_master","debian_10_64_001_master","Fedora_30_64_001_master","Fedora_31_64_001_master","ubuntu_20.04_64_001_master","Fedora_32_64_001_master"]}]'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Authorization, Content-Type, Accept, Access-Control-Allow-Credentials,
+        DNT, X-CustomHeader, Keep-Alive, User-Agent, If-Modified-Since, Cache-Control,
+        Accept-Encoding, Accept-Language, Connection, Cookie, Host, Pragma, X-Atlassian-Token,
+        X-ExperimentalApi, Referer
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, COPY, PATCH, OPTIONS, HEAD
+      Access-Control-Allow-Origin:
+      - https://vscale.io
+      Access-Control-Expose-Headers:
+      - VSCALE-ERROR-MESSAGE, VSCALE-REQUEST-ID
+      Access-Control-Max-Age:
+      - '1728000'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '432'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 19 Mar 2021 13:29:02 GMT
+      Server:
+      - vscale
+      Set-Cookie:
+      - cid=X9X/EWBUpx4ygQvuHmCVAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - origin
+      X-Request-Id:
+      - RuIk6evHHQAsPu9rhd4XJ
+    status:
+      code: 200
+      message: OK
+version: 1

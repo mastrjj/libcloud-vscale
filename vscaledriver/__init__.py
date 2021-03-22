@@ -72,3 +72,10 @@ class VscaleDriver(NodeDriver):
         for n in response.object:
             nodes.append(n)
         return nodes
+
+    def list_sizes(self):
+        response = self.connection.request("v1/rplans")
+        sizes = []
+        for s in response.object:
+            sizes.append(s)
+        return sizes
